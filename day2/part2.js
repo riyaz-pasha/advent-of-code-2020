@@ -11,8 +11,7 @@ const seperateInput = (input) => {
 const validPassowrds = (input) => {
     const isFirstPositionValid = input.password.charAt(input.min - 1) === input.char
     const isLastPositionValid = input.password.charAt(input.max - 1) === input.char
-    return (isFirstPositionValid && !isLastPositionValid)
-        || (!isFirstPositionValid && isLastPositionValid)
+    return (isFirstPositionValid + isLastPositionValid) === 1
 }
 
 const noOfValidPasswords = array.map(seperateInput).filter(validPassowrds).length
