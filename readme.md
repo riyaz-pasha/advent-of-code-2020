@@ -31,9 +31,5 @@
 | [Day 24: TBD]()| | |
 | [Day 25: TBD]()| | |
 
-## Running Tests
-
-Each day contains its own set of tests. To run them type `npm test`.
-
 ## Visit
 - http://adventofcode.com/2020
