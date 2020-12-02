@@ -1,10 +1,7 @@
 const array = require("./input");
 
 const seperateInput = (input) => {
-    const min = parseInt(input.match(/\d+(?=-)/g)[0])
-    const max = parseInt(input.match(/(?<=-)\d+/g)[0])
-    const char = input.match(/\w(?=:)/g)[0]
-    const password = input.match(/(?<=: )\w+/g)[0]
+    const [, min, max, char, password] = /(\d+)-(\d+) ([a-z]): ([a-z]+)/.exec(input);
     return { min, max, char, password }
 }
 
