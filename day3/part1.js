@@ -1,7 +1,7 @@
 const TREE = "#";
 
-const getNoOfTreeWithSlope = ({ right, down }) => {
-    const input = require("./input").split("\n");
+const getNoOfTreeInSlope = (input, { right, down }) => {
+    input = input.split("\n")
     let x = 0
     let y = 0
     let treesCount = 0
@@ -21,4 +21,4 @@ const getNoOfTreeWithSlope = ({ right, down }) => {
     return treesCount
 }
 
-module.exports = getNoOfTreeWithSlope
+module.exports = getNoOfTreeInSlope

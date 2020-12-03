@@ -1,7 +1,8 @@
-const getNoOfTreeWithSlope = require("../part1");
+const getNoOfTreeInSlope = require("../part1");
+const input = require("../input");
 
-describe('part1', () => {
-    test('right 3 down 1', () => {
-        expect(getNoOfTreeWithSlope({ right: 3, down: 1 })).toEqual(252)
+describe('day3', () => {
+    test('part1', () => {
+        expect(getNoOfTreeInSlope(input, { right: 3, down: 1 })).toEqual(252)
     });
 });
