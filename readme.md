@@ -2,7 +2,7 @@
 
 [![Build Status](https://github.com/riyaz-pasha/advent-of-code-2020/workflows/Node.js%20CI/badge.svg)](https://github.com/riyaz-pasha/advent-of-code-2020/actions)
 [![Completion Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Friyaz-pasha%2Fadvent-of-code-2020%2Fmain%2F.github%2Fbadges%2Fcompleted.json)](https://github.com/riyaz-pasha/advent-of-code-2020)
-[![Last commit](https://img.shields.io/github/last-commit/riyaz-pasha/advent-of-code-2020?style=plastic)]
+![Last commit](https://img.shields.io/github/last-commit/riyaz-pasha/advent-of-code-2020?style=plastic)
 
 ## Days
 
