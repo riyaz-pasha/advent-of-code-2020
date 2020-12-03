@@ -1,25 +1,14 @@
-const array = require("./input");
+const getNoOfTreeWithSlope = require("./part1");
+const d1r1 = getNoOfTreeWithSlope({ down: 1, right: 1 })
+console.log("d1r1", d1r1)
+const d1r3 = getNoOfTreeWithSlope({ down: 1, right: 3 })
+console.log("d1r3", d1r3)
+const d1r5 = getNoOfTreeWithSlope({ down: 1, right: 5 })
+console.log("d1r5", d1r5)
+const d1r7 = getNoOfTreeWithSlope({ down: 1, right: 7 })
+console.log("d1r7", d1r7)
+const d2r1 = getNoOfTreeWithSlope({ down: 2, right: 1 })
+console.log("d2r1", d2r1)
 
-const seperateInput = (input) => {
-    const min = parseInt(input.match(/\d+(?=-)/g)[0])
-    const max = parseInt(input.match(/(?<=-)\d+/g)[0])
-    const char = input.match(/\w(?=:)/g)[0]
-    const password = input.match(/(?<=: )\w+/g)[0]
-    return { min, max, char, password }
-}
-
-const validPassowrds = (input) => {
-    const isFirstPositionValid = input.password.charAt(input.min - 1) === input.char
-    const isLastPositionValid = input.password.charAt(input.max - 1) === input.char
-    return (isFirstPositionValid + isLastPositionValid) === 1
-}
-
-const noOfValidPasswords = array.map(seperateInput).filter(validPassowrds).length
-console.log("noOfValidPasswords", noOfValidPasswords)
-
-
-
-
-// 1-3 a: abcde is valid: position 1 contains a and position 3 does not.
-// 1-3 b: cdefg is invalid: neither position 1 nor position 3 contains b.
-// 2-9 c: ccccccccc is invalid: both position 2 and position 9 contain c.
+const mult = d1r1 * d1r3 * d1r5 * d1r7 * d2r1
+console.log("🚀 mult", mult) // 2608962048
