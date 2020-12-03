@@ -7,7 +7,7 @@
 |---|:---:|:---:|
 | ✔ [Day 1: Report Repair](https://github.com/riyaz-pasha/advent-of-code-2020/tree/main/day1)| 🌟 | 🌟 |
 | ✔ [Day 2: Password Philosophy](https://github.com/riyaz-pasha/advent-of-code-2020/tree/main/day2)|🌟 | 🌟 |
-| [Day 3: TBD]()| | |
+| ✔ [Day 3: Toboggan Trajectory](https://github.com/riyaz-pasha/advent-of-code-2020/tree/main/day3)|🌟 | 🌟 |
 | [Day 4: TBD]()| | |
 | [Day 5: TBD]()| | |
 | [Day 6: TBD]()| | |
