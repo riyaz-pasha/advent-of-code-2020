@@ -1,5 +1,8 @@
 # Advent of Code 2020
 
+[![Build Status](https://github.com/riyaz-pasha/advent-of-code-2020/workflows/build/badge.svg)](https://github.com/riyaz-pasha/advent-of-code-2020/actions)
+[![Completion Status](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/riyaz-pasha/advent-of-code-2020/main/.github/badges/completion.json)](https://github.com/riyaz-pasha/advent-of-code-2020)
+
 ## Days
 
 
