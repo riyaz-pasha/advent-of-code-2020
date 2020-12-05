@@ -13,7 +13,7 @@
 |[![Day2](https://img.shields.io/badge/Day-2-blue)](https://adventofcode.com/2020/day/2) |[Password Philosophy](https://github.com/riyaz-pasha/advent-of-code-2020/tree/main/day2)|🌟 | 🌟 |
 |[![Day3](https://img.shields.io/badge/Day-3-blue)](https://adventofcode.com/2020/day/3) |[Toboggan Trajectory](https://github.com/riyaz-pasha/advent-of-code-2020/tree/main/day3)|🌟 | 🌟 |
 |   [![Day4](https://img.shields.io/badge/Day-4-blue)](https://adventofcode.com/2020/day/4)|[Passport Processing](https://github.com/riyaz-pasha/advent-of-code-2020/tree/main/day4)|🌟 | 🌟 |
-|   [![Day5](https://img.shields.io/badge/Day-5-blue)](https://adventofcode.com/2020/day/5)|[TBD]()| | |
+|   [![Day5](https://img.shields.io/badge/Day-5-blue)](https://adventofcode.com/2020/day/5)|[Binary Boarding](https://github.com/riyaz-pasha/advent-of-code-2020/tree/main/day5)|🌟 ||
 |   [![Day6](https://img.shields.io/badge/Day-6-blue)](https://adventofcode.com/2020/day/6)|[TBD]()| | |
 |   [![Day7](https://img.shields.io/badge/Day-7-blue)](https://adventofcode.com/2020/day/7)|[TBD]()| | |
 |   [![Day8](https://img.shields.io/badge/Day-8-blue)](https://adventofcode.com/2020/day/8)|[TBD]()| | |
