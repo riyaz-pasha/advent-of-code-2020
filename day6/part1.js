@@ -1,5 +1,3 @@
-const input = require("./input")
-
 const getCountOfYes = (groupResponse) => new Set(groupResponse.replace(/\n/g, "").split("")).size
 
 const getTheCountOfQuestionsAnsweredAsYes = (input) => input.split("\n\n")

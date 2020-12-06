@@ -1,19 +1,3 @@
-const input = `abc
-
-a
-b
-c
-
-ab
-ac
-
-a
-a
-a
-a
-
-b`
-
 const getCountOfYes = (groupResponse) => {
     const individualResponses = groupResponse.split(/\n/g)
     const countOfMembers = individualResponses.length
