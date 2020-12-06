@@ -16,7 +16,7 @@ a
 
 b`
 
-describe('day5', () => {
+describe('day6', () => {
     test('testInput => 11', () => {
         expect(getTheCountOfQuestionsAnsweredAsYes(testInput)).toEqual(11)
     });
