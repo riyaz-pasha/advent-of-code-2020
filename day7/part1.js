@@ -1,34 +1,35 @@
-const convertToObject = (info) => {
+const extractQuantity = (info) => {
     if (info.includes("no")) return;
-    const [_, quantity, bagName] = /(\d+) (.*)/g.exec(info)
-    return { [bagName]: quantity }
+    const [_, quantity, color] = /(\d+) (\w+ \w+) bags?/g.exec(info)
+    return { [color]: parseInt(quantity) }
 }
 
-const extractBagsCanHold = (bagInfo) => {
-    const [bagName, ...contains] = bagInfo.replace(new RegExp(/(contain|,|\.)/, "g"), "")
-        .split(/bags?/g)
-    const bagsContains = contains
-        .filter(str => str !== "")
-        .reduce((prevObject, currentValue) => ({ ...prevObject, ...convertToObject(currentValue.trim()) }), {})
-    return { [bagName.trim()]: bagsContains }
+const extractRule = (line) => {
+    const [, color, colorsInside] = /(\w+ \w+) bags contain (.*)\./.exec(line)
+    const colorsInit = colorsInside
+        .split(", ")
+        .reduce((prevColors, currentColor) => ({ ...prevColors, ...extractQuantity(currentColor) }), {})
+    return { [color]: colorsInit }
 }
 
-const findKeysWhichHasValue = (bagsInfo, bagName) => {
-    return Object.keys(bagsInfo)
-        .filter(name => Object.keys(bagsInfo[name]).includes(bagName))
+const getRules = (input) => input.split("\n")
+    .reduce((prevRules, currentLine) => ({ ...prevRules, ...extractRule(currentLine) }), {})
+
+const findKeysWhichHasValue = (color, rules) => {
+    const bagsWhichHasCurrentColor = Object.keys(rules).filter(name => Object.keys(rules[name]).includes(color))
+    return bagsWhichHasCurrentColor
 }
 
-function getBagsCount(bagsInfo, bagName) {
-    const bags = findKeysWhichHasValue(bagsInfo, bagName)
-    return bags
-        .reduce((allBagsThatCanHold, bagName) => [...allBagsThatCanHold, ...getBagsCount(bagsInfo, bagName)], bags);
+const getBagsCount = (color, rules) => {
+    const bagsWithCurrentColor = findKeysWhichHasValue(color, rules)
+    return bagsWithCurrentColor
+        .reduce((allBagsThatCanHold, currentColor) => [...allBagsThatCanHold, ...getBagsCount(currentColor, rules)], bagsWithCurrentColor);
 }
 
 const getNoOfBagColorsThatCanHold = (input) => {
     const bagName = "shiny gold"
-    const bagsInfo = input.split("\n")
-    .reduce((prevObject, currentValue) => ({ ...prevObject, ...extractBagsCanHold(currentValue) }), {})
-    const count = new Set(getBagsCount(bagsInfo, bagName)).size
+    const rules = getRules(input)
+    const count = new Set(getBagsCount(bagName, rules)).size
     return count
 }
 
