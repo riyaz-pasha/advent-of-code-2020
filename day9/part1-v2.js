@@ -1,16 +1,13 @@
+const input = require("./input")
+
 const isCurrentNumerIsSumOfAnyTwoNumber = (invalidNumber, preambleList) =>
     preambleList.some(currentNumber => preambleList.includes(invalidNumber - currentNumber))
 
-const getFirstInvalidNumber = (input, preambleSize) => {
-    const data = input.split("\n").map(num => parseInt(num))
+const findFirstInvalidNumber = (data, preambleSize) => data.slice(preambleSize)
+    .find((number, index) => !isCurrentNumerIsSumOfAnyTwoNumber(number, data.slice(index, index + preambleSize)))
 
-    for (let invalidNumberIndex = preambleSize; invalidNumberIndex < data.length; invalidNumberIndex++) {
-        const currentPreambleList = data.slice(invalidNumberIndex - preambleSize, invalidNumberIndex)
-        const currentNumber = data[invalidNumberIndex]
-        if (!isCurrentNumerIsSumOfAnyTwoNumber(currentNumber, currentPreambleList)) return data[invalidNumberIndex];
-
-    }
-}
+const getFirstInvalidNumber = (input, preambleSize) =>
+    findFirstInvalidNumber(input.split("\n").map(num => parseInt(num)), preambleSize)
 
 const testInput = `35
 20
@@ -33,6 +30,7 @@ const testInput = `35
 309
 576`
 console.log(getFirstInvalidNumber(testInput, 5))
+console.log(getFirstInvalidNumber(input, 25))
 
 
 module.exports = {
