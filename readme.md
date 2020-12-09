@@ -17,7 +17,7 @@
 |   [![Day6](https://img.shields.io/badge/Day-6-blue)](https://adventofcode.com/2020/day/6)|[Custom Customs](https://github.com/riyaz-pasha/advent-of-code-2020/tree/main/day6)|🌟 |🌟 |
 |   [![Day7](https://img.shields.io/badge/Day-7-blue)](https://adventofcode.com/2020/day/7)|[Handy Haversacks](https://github.com/riyaz-pasha/advent-of-code-2020/tree/main/day7)|🌟 | 🌟 |
 |   [![Day8](https://img.shields.io/badge/Day-8-blue)](https://adventofcode.com/2020/day/8)|[Handheld Halting](https://github.com/riyaz-pasha/advent-of-code-2020/tree/main/day8)|🌟 | 🌟 |
-|   [![Day9](https://img.shields.io/badge/Day-9-blue)](https://adventofcode.com/2020/day/9)|[TBD]()| | |
+|   [![Day9](https://img.shields.io/badge/Day-9-blue)](https://adventofcode.com/2020/day/9)|[Encoding Error](https://github.com/riyaz-pasha/advent-of-code-2020/tree/main/day9)|🌟 |  |
 |   [![Day10](https://img.shields.io/badge/Day-10-blue)](https://adventofcode.com/2020/day/10)|[TBD]()| | |
 |   [![Day11](https://img.shields.io/badge/Day-11-blue)](https://adventofcode.com/2020/day/11)|[TBD]()| | |
 |   [![Day12](https://img.shields.io/badge/Day-12-blue)](https://adventofcode.com/2020/day/12)|[TBD]()| | |
