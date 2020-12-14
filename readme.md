@@ -22,7 +22,7 @@
 |   [![Day11](https://img.shields.io/badge/Day-11-blue)](https://adventofcode.com/2020/day/11)|[TBD]()| | |
 |   [![Day12](https://img.shields.io/badge/Day-12-blue)](https://adventofcode.com/2020/day/12)|[TBD]()| | |
 |   [![Day13](https://img.shields.io/badge/Day-13-blue)](https://adventofcode.com/2020/day/13)|[TBD]()| | |
-|   [![Day14](https://img.shields.io/badge/Day-14-blue)](https://adventofcode.com/2020/day/14)|[Docking Data](https://github.com/riyaz-pasha/advent-of-code-2020/tree/main/day14)|🌟 | |
+|   [![Day14](https://img.shields.io/badge/Day-14-blue)](https://adventofcode.com/2020/day/14)|[Docking Data](https://github.com/riyaz-pasha/advent-of-code-2020/tree/main/day14)|🌟 |🌟|
 |   [![Day15](https://img.shields.io/badge/Day-15-blue)](https://adventofcode.com/2020/day/15)|[TBD]()| | |
 |   [![Day16](https://img.shields.io/badge/Day-16-blue)](https://adventofcode.com/2020/day/16)|[TBD]()| | |
 |   [![Day17](https://img.shields.io/badge/Day-17-blue)](https://adventofcode.com/2020/day/17)|[TBD]()| | |
