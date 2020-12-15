@@ -1,9 +1,6 @@
 const { memoryGame } = require("../part1");
 const input = require("../input");
-const test1 = `mask = XXXXXXXXXXXXXXXXXXXXXXXXXXXXX1XXXX0X
-mem[8] = 11
-mem[7] = 101
-mem[8] = 0`
+
 describe('day15', () => {
     test('0,3,6 =>2020th position is 436', () => {
         expect(memoryGame([0, 3, 6])).toEqual(436)
