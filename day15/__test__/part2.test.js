@@ -25,6 +25,6 @@ describe('day15', () => {
     })
 
     test.only('part2', () => {
-        expect(memoryGame(input, 30000000)).toEqual(1238)
+        expect(memoryGame(input, 30000000)).toEqual(3745954)
     });
 });
